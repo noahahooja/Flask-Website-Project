@@ -1,0 +1,25 @@
+        function mathPls() {
+          for 'sin' in cal.display.value {
+            var sinling = cal.display.value.split('sin(').pop().split(')')[0];
+            var singet = math.sin(math.evaluate(sinling));
+            var sinreplace = cal.display.value.replace('sin(' + sinling + ')', '(' + singet + ')');
+            singet;
+            sinreplace;
+          }
+          for 'cos' in cal.display.value {
+            var cosling = cal.display.value.split('cos(').pop().split(')')[0];
+            var cosget = math.cos(math.evaluate(cosling));
+            var cosreplace = cal.display.value.replace('cos(' + cosling + ')', '(' + cosget + ')');
+            cosget;
+            cosreplace;
+          }
+          for 'tan' in cal.display.value {
+            var tanling = cal.display.value.split('tan(').pop().split(')')[0];
+            var tanget = math.tan(math.evaluate(tanling));
+            var tanreplace = cal.display.value.replace('tan(' + tanling + ')', '(' + tanget + ')');
+            tanget;
+            tanreplace;
+          }
+          finalnumber = math.evaluate(cal.display.value);
+          return finalnumber;
+        }

@@ -1,0 +1,77 @@
+<!DOCDTYPE html>
+{% extends "base.html"%}
+
+{% block heading %}Calculator{% endblock %}
+
+
+{% block body %}
+
+<style>
+.box{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;}
+
+.calculator{
+  width:400px;
+  margin:auto;
+  height:auto;
+  background:black;
+  padding:15px;}
+
+input[type=text]{
+  width:100%;
+  padding:10px;
+  font-size:22px;
+  font-weight:bold;
+  margin-top:20px;
+  border-radius:5px;}
+
+input[type=button]{
+  width:89px;
+  padding:10px;
+  font-size:22px;
+  font-weight:bold;
+  border-radius:5px;}
+
+#del{
+width:200px}
+</style>
+
+  <div class ="calculator">
+    <form name ="cal">
+      <input type ="text" name="display">
+
+      {% for x in [
+      ['7', '8', '9', '+'],
+      ['4', '5', '6', '-'],
+      ['1', '2', '3', '*'],
+      ['0', '.', '%', '/'],
+      ['sin', 'cos', 'tan', '^']
+      ] %}
+    
+        {% for y in range(0, 4) %}
+          <input type ="button" value ={{x[y]}} onclick ="cal.display.value+='{{x[y]}}'">
+        {% endfor %}
+        <br><br>
+      {% endfor %}
+      {% for x in ['(', ')'] %}
+        <input type ="button" value ="{{x}}" onclick ="cal.display.value+='{{x}}'">
+      {% endfor %}
+      <script>
+        function mathPls(str) {   
+        var aonga = str.split('sin(').pop().split(')')[0];
+        var bonga = eval(aonga);
+        var donga = str.replace(aonga, Math.sin(bonga)); donga;
+        var conga = str.replace('sin', ''); conga;
+        return eval(str); }
+      </script>
+      <input type ="button" value ="=" onclick ="cal.display.value=mathPls(cal.display.value)">
+      <br><br>
+      <input style="width:100%" type ="button" value ="DELETE" onclick ="cal.display.value=''">
+      <br><br>
+    </form>
+  </div>
+{% endblock %}
+
+{% block fnaf %}{% endblock %}
