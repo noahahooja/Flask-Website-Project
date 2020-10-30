@@ -25,6 +25,10 @@ Individual Assignments:
 
 Noah: Transfer work from repl.it to github and intelliJ. Update readme.md file on daily basis. Work on website code/visuals. Update journal.
 
+Nolan: Create trig functions on calculator. Create new math function to allow math to parse as it is shown in the calculator display form. Research built-in javascript functions to help with this process.
+
+Troy: Help work on the calculator. Add notes in the readme, and understand github and intelliJ.
+
 
 =================
 
