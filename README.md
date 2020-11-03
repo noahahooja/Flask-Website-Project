@@ -5,6 +5,14 @@ Our goal for this project is to make it like an online arcade where you can pick
 Make the website unique so it is not just a blank page with links
 Add animations, cool backgrounds, etc.
 
+Week 9 11/2:
+What we did this week:
+
+Individual Assignments:
+
+
+================
+
 Week 8: 10/26
 What we did this week:
 
