@@ -1,7 +1,7 @@
 import data  # projects definitions are placed in different file
 
 #
-from Flask import Flask, render_template
+from flask import Flask, render_template
 
 # create a Flask instance
 app = Flask(__name__)
