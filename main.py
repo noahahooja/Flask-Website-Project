@@ -1,34 +1,61 @@
-from flask import Flask, request, url_for, redirect, render_template
-#create a flask instance
+import data  # projects definitions are placed in different file
 
+#
+from Flask import Flask, render_template
+
+# create a Flask instance
 app = Flask(__name__)
 
-
-class Projects:
-  def __init__(self, projectname, repl, projectplan):
-    self.projectname = projectname
-    self.repl = repl
-    self.projectplan = projectplan
-
-#past 6 weeks project
-GamesProject = Projects("Games Project", "https://repl.it/@NolanDEsopo/Games#README.MD", "https://docs.google.com/document/d/1WtuvQZD_jODhgrxv6mhmUYqV28o_DA9hs4gDBUIGt_A/edit?usp=sharing")
-#next 6 weeks project
-PortfolioProject = Projects("Portfolio Project", "https://repl.it/@NoahAhooja/Flask-Website-Project#main.py", "/portfolio")
-
-#connects default URL of server to a python function
+# connects default URL of server to render home.html
 @app.route('/')
-def home():
-  return render_template("home.html", links = [GamesProject, PortfolioProject], Title = "Home")
+def home_route():
+  return render_template("home.html", projects=data.setup())
 
-@app.route('/calculator')
-def calculator():
-  return render_template('calculator.html')
 
-calculator = Projects("Calculator", "/calculator", "")
+# connects /hello path of server to render hello.html
+@app.route('/hello/')
+def hello_rooute():
+  return render_template("hello.html", projects=data.setup())
 
-@app.route('/portfolio')
-def portfolio():
-  return render_template('portfolio.html', portfolioprojects = [calculator], Title = "Portfolio")
+
+# connects /flask path of server to render flask.html
+@app.route('/flask/')
+def flask_route():
+  return render_template("flask.html", projects=data.setup())
+
+
+@app.route("/project/runtime")
+def runtime_route():
+  return render_template("task.html", data=data.runtime())
+
+
+@app.route("/project/planning")
+def planning_route():
+  return render_template("task.html", data=data.planning())
+
+
+@app.route("/project/journal")
+def journal_route():
+  return render_template("task.html", data=data.journal())
+
+@app.route("/project/playground")
+def playground_route():
+  return render_template("task.html", data=data.playground())
+
+@app.route("/project/code")
+def code_route():
+  return render_template("task.html", data=data.code())
+
+@app.route("/all/")
+def all_route():
+  return render_template("taskall.html", datalist=data.alldata())
+
+
+@app.route("/hey/")
+def heyheyhey_route():
+  return "<h1 style='background-color:blue;color:white'>Hey Hey Hey!</h1>"
+
 
 if __name__ == "__main__":
-  app.run(debug=True, port='3000', host='0.0.0.0')
+  # runs the application on the repl development server
+  app.run(debug=True)
