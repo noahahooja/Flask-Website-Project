@@ -5,8 +5,21 @@ Our goal for this project is to make it like an online arcade where you can pick
 Make the website unique so it is not just a blank page with links
 Add animations, cool backgrounds, etc.
 
+We are using python 3.8 for our project
+
 Week 9 11/2:
 What we did this week:
+
+
+11/4:
+Mr. M talked about our final project and the live running link we will need to have by the 18th. Then we went to breakouts to work on our code
+
+11/3: 
+We were lectured on embedding different things such as menus or google docs into our website
+
+11/2:
+Mr. M introduced our video assignment due Friday. We have to create a one minute video showing the front end, back end, python, and tools used in our project
+
 
 Individual Assignments:
 
