@@ -1,38 +1,50 @@
 def runtime():
-    greeting = "Welcome to Noah's Project"
+    greeting = "Hi!"
     name = "Repl"
+    doa = "October 30"
     job = "Runtime Link"
-    embed = "https://Flask-Website-Project.noahahooja.repl.co"
-    info = {"greeting": greeting, "name": name, "job": job, "embed": embed}
+    embed = "https://repl.it/@NoahAhooja/Flask-Website-Project#main.py"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def planning():
-    greeting = "Hi!"
+    greeting = "This is our project document"
     name = "Padlet"
+    doa = "October 23"
     job = "Project Planning"
-    embed = "https://padlet.com/jmortensen7/csptime1_2"
-    info = {"greeting": greeting, "name": name, "job": job, "embed": embed}
+    embed = "https://docs.google.com/document/d/1xwbOqk9I-5DXH8NvxgTX13KvAgK13SI8XJTYfEbIgUM/edit"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
 def journal():
-    greeting = "Journal"
+    greeting = "This is our journal"
     name = "Google Doc"
+    doa = "October 16"
     job = "Journal Record"
     embed = "https://docs.google.com/document/d/1vaG4nyI1oJhL8I3tl_YtNfT0xXNU3FGKKNGN1Yadma0/edit"
-    info = {"greeting": greeting, "name": name, "job": job, "embed": embed}
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 
+def playground():
+    greeting = "This is our arcade game"
+    name = "Replit"
+    doa = "October 9"
+    job = "Playground"
+    embed = "https://repl.it/@NolanDEsopo/Games"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
+    return info
 
 def code():
-    greeting = "Code Section"
+    greeting = "Code in Git"
     name = "Gist"
+    doa = "October 2"
     job = "Code Sample"
-    gist = "https://gist.github.com/jm1021/cfb277c7357e02fcb4123a6c7429a5c1.js"
-    info = {"greeting": greeting, "name": name, "job": job, "gist": gist}
+    gist = "https://github.com/noahahooja/Flask-Website-Project"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "gist": gist}
     return info
 
 def alldata():
-    return [runtime(), planning(), journal(), code()]
+    return [runtime(), planning(), journal(), playground(), code()]
 
 #Data "setup" for Projects
 #next step would be to extract project data from a database
@@ -45,10 +57,10 @@ def setup():
     twitter = "https://twitter.com/NighthawkCoding"
     source = {"name": name, "github": github, "linkedin": linkedin, "youtube": youtube, "twitter": twitter}
     #Project Data
-    project1 =  "Arcade"
+    project1 =  "Hello Series"
     projlinks1 = [
-        Link("Project Plan", "https://docs.google.com/document/d/168LMTHNHsrdtSSya1NUOy9lBK3ezxl6BiGeg_utE8IA/edit"),
-        Link("Repl", "https://repl.it/@NolanDEsopo/Games#main.py"),
+        Link("Project Plan", "https://docs.google.com/document/d/1xwbOqk9I-5DXH8NvxgTX13KvAgK13SI8XJTYfEbIgUM/edit"),
+        Link("Repl", "https://repl.it/@NoahAhooja/Flask-Website-Project#main.py"),
         Link("Resources", "https://padlet.com/jmortensen7/csp2021")
     ]
     project2 =  "Flask Project"

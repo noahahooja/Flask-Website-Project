@@ -10,37 +10,37 @@
 </head>
 
 <body style="background-color:gray;color:white;">
-    <!--Navbar-->
-    <nav class="navbar navbar-light navbar-1 white">
+<!--Navbar-->
+<nav class="navbar navbar-light navbar-1 white">
 
-        <!-- Navbar brand -->
-        <!-- Collapse button -->
-        <div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-                    aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation" style="font-size: xx-large; border: 0em;"><span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Navbar brand -->
+    <!-- Collapse button -->
+    <div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation" style="font-size: xx-large; border: 0em;"><span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand" href="/" style="font-family: gilroyXB; font-size: xx-large; color: whitesmoke;">
-                Nighthawk Coding Society {% block greeting %}{% endblock %}
-            </a>
+        <a class="navbar-brand" href="/" style="font-family: gilroyXB; font-size: xx-large; color: whitesmoke;">
+            Nighthawk Coding Society {% block greeting %}{% endblock %}
+        </a>
 
+    </div>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+        <!-- Links -->
+        <div class="navbar-nav" style="font-size: large;">
+            <a class="nav-link all" href="/all/">All</a>
+            <a class="nav-link runtime " href="/project/runtime">Runtime</a>
+            <a class="nav-link planning" href="/project/planning">Planning</a>
+            <a class="nav-link journal" href="/project/journal">Journal</a>
+            <a class="nav-link playground" href="/project/playground">Playground</a>
+            <a class="nav-link code" href="/project/code">Code</a>
         </div>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-            <!-- Links -->
-            <div class="navbar-nav" style="font-size: large;">
-                <a class="nav-link all" href="/all/">All</a>
-                <a class="nav-link runtime " href="/project/runtime">Runtime</a>
-                <a class="nav-link planning" href="/project/planning">Planning</a>
-                <a class="nav-link journal" href="/project/journal">Journal</a>
-                <a class="nav-link playground" href="/project/playground">Playground</a>
-                <a class="nav-link code" href="/project/code">Code</a>
-            </div>
-            <!-- Links -->
-        </div>
-        <!-- Collapsible content -->
-    </nav>
+        <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+</nav>
 
 {% block body %}
 {% endblock %}

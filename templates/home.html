@@ -1,16 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 {% extends "base.html" %}
 
-{% block heading %}Noah, Nolan, And Troy's Website{% endblock %}
-{% block body %}
-
-  {% for x in range(links.__len__()) %}
-    
-    <a class="red space" href="{{ links[x].projectplan }}">{{links[x].projectname}}</a>
-    <br>
-    
-    <a class="red tab" href="{{ links[x].repl }}">Repl</a>
-    <br>
-
-  {% endfor %}
-
+{% block head %}
+<title>{{name}} | Home </title>
 {% endblock %}
