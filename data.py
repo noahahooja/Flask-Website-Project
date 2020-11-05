@@ -57,7 +57,7 @@ def setup():
     twitter = "https://twitter.com/NighthawkCoding"
     source = {"name": name, "github": github, "linkedin": linkedin, "youtube": youtube, "twitter": twitter}
     #Project Data
-    project1 =  "Hello Series"
+    project1 =  ""
     projlinks1 = [
         Link("Project Plan", "https://docs.google.com/document/d/1xwbOqk9I-5DXH8NvxgTX13KvAgK13SI8XJTYfEbIgUM/edit"),
         Link("Repl", "https://repl.it/@NoahAhooja/Flask-Website-Project#main.py"),

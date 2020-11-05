@@ -54,7 +54,7 @@ def all_route():
 
 @app.route("/hey/")
 def heyheyhey_route():
-    return "<h1 style='background-color:blue;color:white'>Hey Hey Hey!</h1>"
+    return "<h1 style='background-color:yellow;color:white'>Hey Hey Hey!</h1>"
 
 
 if __name__ == "__main__":
