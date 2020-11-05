@@ -10,6 +10,7 @@ We are using python 3.8 for our project
 Week 9 11/2:
 What we did this week:
 
+11/5: We went to breakout rooms right away to work on our project and prepare for our video due tomorrow
 
 11/4:
 Mr. M talked about our final project and the live running link we will need to have by the 18th. Then we went to breakouts to work on our code
@@ -23,6 +24,7 @@ Mr. M introduced our video assignment due Friday. We have to create a one minute
 
 Individual Assignments:
 
+Noah: Get a running web server working in IntelliJ, learn how to embid repl.it links and google docs
 
 ================
 

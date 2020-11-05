@@ -50,8 +50,8 @@ def alldata():
 #next step would be to extract project data from a database
 def setup():
     #Source Data
-    name = "Nighthawk Coding"
-    github = "https://github.com/nighthawkcoders"
+    name = "Dinos Coding"
+    github = "https://github.com/noahahooja/Flask-Website-Project"
     linkedin = "https://www.linkedin.com/in/john-mortensen-1021/"
     youtube = "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q?view_as=subscriber"
     twitter = "https://twitter.com/NighthawkCoding"
